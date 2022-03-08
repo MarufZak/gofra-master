@@ -1,0 +1,158 @@
+.wrapper {
+    background: url('../img/page-about-bg.jpg') center center / cover no-repeat;
+}
+
+.desc {
+    padding: clamp(40px,calc(100vw/14.4),120px) 0;
+}
+
+.desc__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc__img {
+    flex: 0 1 40%;
+    height: 500px;
+}
+.desc__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: clamp(15px,calc(40vw/14.4),500px);
+}
+
+.desc__content {
+    flex: 0 1 50%;
+}
+
+.desc__title {
+    font-family: "M-L";
+    font-size: clamp(24px,calc(32vw/14.4),36px);
+    line-height: clamp(28px,calc(36vw/14.4),40px);
+    margin-bottom: clamp(10px,calc(25vw/14.4),350px);
+    color: var(--black);
+}
+
+.desc__text {
+    font-family: "M-M";
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.positive {
+    padding: clamp(40px,calc(100vw/14.4),120px) 0;
+}
+
+.positive__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.positive__card {
+    display: flex;
+    align-items: center;
+}
+
+.positive__card:not(:last-child) {
+    margin-bottom: clamp(20px,calc(50vw/14.4),70px);
+}
+
+.positive__card-img {
+    flex: 1 0 50%;
+    height: 300px;
+}
+.positive__card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.positive__card-back {
+    flex-direction: row-reverse;
+}
+
+.positive__card-content {
+    flex: 1 0 50%;
+    padding: 40px 32px;
+    border-radius: 32px;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.positive__card-title {
+    font-family: "M-R";
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.positive__card-text {
+    font-family: "M-L";
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+}
+
+@media (max-width: 992px) {
+    .desc__body {
+        flex-direction: column;
+    }
+
+    .desc__img {
+        flex: unset;
+        width: 100%;
+        height: 350px;
+    }
+
+    .desc__img img {
+        object-fit: cover;
+    }
+
+    .desc__content {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .positive__card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .positive__card-img {
+        width: clamp(150px,calc(300vw/14.4),350px);
+        margin-bottom: 25px;
+    }
+    .positive__card-content {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .desc__text {
+        text-align: justify;
+    }
+    
+}

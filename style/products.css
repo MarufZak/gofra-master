@@ -1,0 +1,109 @@
+.catalog__intro {
+    padding: clamp(30px,calc(150vw/14.4)100px) 0;
+    background: url('../img/products-bg.png') left clamp(-40px,calc(-80vw/14.4),-100px) / cover no-repeat;
+}
+
+.catalog__title {
+    font-family: "S-B";
+    font-size: clamp(30px,calc(64vw/14.4),80px);
+    line-height: clamp(40px,calc(74vw/14.4),90px);;
+    text-align: center;
+    color: var(--black);
+    padding: 150px 0;
+}
+
+.catalog__products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.catalog__product {
+    width: clamp(300px,calc(320vw/14.4),400px);
+    height: clamp(350px,calc(370vw/14.4),450px);
+    border-radius: 15px;
+    padding: 20px;
+    background: white;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 15px 30px 15px;
+}
+
+.catalog__product:hover {
+    -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+            transform: translateY(10px);
+}
+
+.catalog__product:hover:before {
+    opacity: 1;
+}
+
+.catalog__product:hover .info {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.catalog__product:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.catalog__product img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.catalog__product .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.catalog__product .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+}

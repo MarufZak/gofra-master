@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'M-R';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'M-M';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'M-B';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'M-L';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'S-R';
+    src: url('../fonts/snell/snell-regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'S-B';
+    src: url('../fonts/snell/snell-bold.otf');
+    font-weight: 700;
+}
